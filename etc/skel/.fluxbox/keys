@@ -1,38 +1,10 @@
-! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
-! check lines marked by 'FBCV13' if they are correctly updated
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Move1 :StartMoving
-OnLeftGrip Move1 :StartResizing bottomleft
-OnRightGrip Move1 :StartResizing bottomright
-OnWindowBorder Move1 :StartMoving
-
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Mouse2 :StartTabbing
-
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Double Mouse1 :Shade
-OnTitlebar Mouse3 :WindowMenu
-
-!mouse actions added by fluxbox-update_configs
-OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
-OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
-
-!mouse actions added by fluxbox-update_configs
-OnDesktop Mouse1 :HideMenus
-OnDesktop Mouse2 :WorkspaceMenu
-OnDesktop Mouse3 :RootMenu
-OnDesktop Mouse4 :NextWorkspace
-OnDesktop Mouse5 :PrevWorkspace
-
 ! ============================================================
 ! Fluxbox keybindings - estilo Sway / Hyprland (Super/Mod4 based)
 ! Copie para ~/.fluxbox/keys
 ! ============================================================
 
 ! --- Aplicativos ---
-Mod4 Return       :ExecCommand xfce4-terminal
+Mod4 Return       :ExecCommand kitty
 Mod4 d            :ExecCommand rofi -show drun -theme ~/.config/rofi/tokyonight.rasi
 Mod4 Shift d      :ExecCommand rofi -show run -theme ~/.config/rofi/tokyonight.rasi
 Mod4 e            :ExecCommand thunar
@@ -45,10 +17,10 @@ Mod4 Shift q       :Kill
 Mod4 f            :ExecCommand ~/.fluxbox/scripts/snap.sh fullscreen
 Mod4 Shift f       :Maximize
 Mod4 t            :ToggleDecor
-Mod4 space        :NextWindow (workspace=[current]) !! FBCV13 !!
-Mod4 Shift space   :PrevWindow (workspace=[current]) !! FBCV13 !!
-Mod4 Tab          :NextWindow (workspace=[current]) (workspace) !! FBCV13 !!
-Mod4 Shift Tab     :PrevWindow (workspace=[current]) (workspace) !! FBCV13 !!
+Mod4 space        :NextWindow
+Mod4 Shift space   :PrevWindow
+Mod4 Tab          :NextWindow (workspace)
+Mod4 Shift Tab     :PrevWindow (workspace)
 
 ! --- Snapping tipo tiling (metade esquerda/direita/topo/baixo) ---
 Mod4 Left         :ExecCommand ~/.fluxbox/scripts/snap.sh left
@@ -72,6 +44,9 @@ Mod4 Shift 5      :SendToWorkspace 5
 Mod4 Control Right :NextWorkspace
 Mod4 Control Left  :PrevWorkspace
 
+! --- Ajuda / Atalhos ---
+Mod4 F1           :ExecCommand voidbr-shortcuts-fluxbox
+
 ! --- Sistema ---
 Mod4 Shift e       :ExecCommand rofi -show power-menu -modi power-menu:~/.fluxbox/scripts/powermenu.sh -theme ~/.config/rofi/tokyonight.rasi
 Mod4 Print        :ExecCommand scrot ~/Pictures/%Y-%m-%d_%H-%M-%S.png
@@ -84,7 +59,3 @@ None XF86AudioLowerVolume :ExecCommand pactl set-sink-volume @DEFAULT_SINK@ -5%
 None XF86AudioMute        :ExecCommand pactl set-sink-mute @DEFAULT_SINK@ toggle
 None XF86MonBrightnessUp  :ExecCommand brightnessctl set +5%
 None XF86MonBrightnessDown:ExecCommand brightnessctl set 5%-
-
-
-
-
