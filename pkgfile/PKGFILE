@@ -1,7 +1,7 @@
 # Maintainer: Vilmar Catafesta <vcatafesta@gmail.com>
 
-pkgname=voidbr-pkgname
-pkgdesc="Package template for VoidLinuxBR"
+pkgname=voidbr-fluxbox-config
+pkgdesc="Skel config for VoidBR FLUXBOX Meta Package"
 pkgver=$(date +%Y%m%d)
 pkgrel=$(date +%H%M)
 provides=()               # "eu SOU o $pkgname pkg1, pra quem depender deles"

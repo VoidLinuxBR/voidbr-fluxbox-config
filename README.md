@@ -1,3 +1,3 @@
-# voidbr-pkgfile
+# voidbr-fluxbox-config
 
-Template for VoidBR pkgmake/pkgfile packages
+Skel config for VoidBR FLUXBOX Meta Package
