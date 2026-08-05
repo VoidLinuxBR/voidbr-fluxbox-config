@@ -1,7 +1,17 @@
+# ~/.fluxbox/keys
+
 ! ============================================================
 ! Fluxbox keybindings - estilo Sway / Hyprland (Super/Mod4 based)
 ! Copie para ~/.fluxbox/keys
 ! ============================================================
+
+! --- Clique no desktop (o Fluxbox NÃO herda isso do padrão do sistema
+! quando você tem um ~/.fluxbox/keys próprio — precisa declarar aqui) ---
+OnDesktop Mouse1  :HideMenus
+OnDesktop Mouse2  :WorkspaceMenu
+OnDesktop Mouse3  :RootMenu
+OnDesktop Mouse4  :NextWorkspace
+OnDesktop Mouse5  :PrevWorkspace
 
 ! --- Aplicativos ---
 Mod4 Return       :ExecCommand kitty
