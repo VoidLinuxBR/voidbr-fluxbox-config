@@ -1,13 +1,40 @@
 window {
-    background: rgba(30, 30, 30, 0.85);
-    border-radius: 12px;
+    background-color: #24283b;
+}
+
+box {
+    background-color: transparent;
 }
 
 button {
-    border-radius: 8px;
-    padding: 12px;
+    background: #1f2335;
+    border: 1px solid #414868;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 10px;
+    transition: all 0.15s ease;
 }
 
 button:hover {
-    background: #5e81ac;
+    background: #2f3549;
+    border-color: #7aa2f7;
+}
+
+button:focus {
+    background: #2f3549;
+    border-color: #7aa2f7;
+    box-shadow: 0 0 0 2px #7aa2f7;
+}
+
+button:active {
+    background: #414868;
+}
+
+label {
+    color: #c0caf5;
+    font-weight: 500;
+}
+
+image {
+    color: #c0caf5;
 }

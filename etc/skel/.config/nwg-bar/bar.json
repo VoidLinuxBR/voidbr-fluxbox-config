@@ -1,12 +1,12 @@
 [
   {
     "label": "Lock",
-    "exec": "hyprlock",
+    "exec": "xlock -mode blank",
     "icon": "system-lock-screen"
   },
   {
     "label": "Logout",
-    "exec": "pkill Hyprland",
+    "exec": "pkill fluxbox",
     "icon": "system-log-out"
   },
   {
