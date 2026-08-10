@@ -1,0 +1,27 @@
+session.screen0.tabs.usePixmap:	true
+session.screen0.tabs.inTitlebar:	true
+session.screen0.toolbar.visible:	false
+session.screen0.toolbar.autoHide:	false
+session.screen0.toolbar.widthPercent:	100
+session.screen0.toolbar.placement:	TopCenter
+session.screen0.iconbar.mode:	{static groups} (workspace)
+session.screen0.slit.placement:	RightBottom
+session.screen0.slit.direction:	Vertical
+session.screen0.focusModel:	ClickToFocus
+session.screen0.tabPlacement:	TopLeft
+session.screen0.workspacewarping:	true
+session.screen0.clickRaises:	true
+session.screen0.focusNewWindows:	true
+session.screen0.opaqueMove:	true
+session.screen0.menuSearch:	itemstart
+session.screen0.windowMenu:	
+session.screen0.fullMaximization:	true
+session.screen0.rootCommand:	feh --bg-fill ~/.fluxbox/wallpaper.jpg
+session.screen0.defaultDeco:	NORMAL
+session.screen0.workspaces:	5
+session.screen0.maxIgnoreIncrement:	true
+session.screen0.autoRaise:	true
+session.screen0.windowScrollAction:	none
+session.styleFile:	~/.fluxbox/styles/TokyoNight/theme.cfg
+session.keyFile:	~/.fluxbox/keys
+session.configVersion:	13

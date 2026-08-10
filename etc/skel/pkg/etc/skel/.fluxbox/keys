@@ -1,0 +1,71 @@
+# ~/.fluxbox/keys
+
+! ============================================================
+! Fluxbox keybindings - estilo Sway / Hyprland (Super/Mod4 based)
+! Copie para ~/.fluxbox/keys
+! ============================================================
+
+! --- Clique no desktop (o Fluxbox NÃO herda isso do padrão do sistema
+! quando você tem um ~/.fluxbox/keys próprio — precisa declarar aqui) ---
+OnDesktop Mouse1  :HideMenus
+OnDesktop Mouse2  :WorkspaceMenu
+OnDesktop Mouse3  :RootMenu
+OnDesktop Mouse4  :NextWorkspace
+OnDesktop Mouse5  :PrevWorkspace
+
+! --- Aplicativos ---
+Mod4 Return       :ExecCommand kitty
+Mod4 d            :ExecCommand rofi -show drun -theme ~/.config/rofi/tokyonight.rasi
+Mod4 Shift d      :ExecCommand rofi -show run -theme ~/.config/rofi/tokyonight.rasi
+Mod4 e            :ExecCommand thunar
+Mod4 b            :ExecCommand firefox
+Mod4 l            :ExecCommand betterlockscreen -l
+
+! --- Janelas ---
+Mod4 q            :Close
+Mod4 Shift q       :Kill
+Mod4 f            :ExecCommand ~/.fluxbox/scripts/snap.sh fullscreen
+Mod4 Shift f       :Maximize
+Mod4 t            :ToggleDecor
+Mod4 space        :NextWindow
+Mod4 Shift space   :PrevWindow
+Mod4 Tab          :NextWindow (workspace)
+Mod4 Shift Tab     :PrevWindow (workspace)
+
+! --- Snapping tipo tiling (metade esquerda/direita/topo/baixo) ---
+Mod4 Left         :ExecCommand ~/.fluxbox/scripts/snap.sh left
+Mod4 Right        :ExecCommand ~/.fluxbox/scripts/snap.sh right
+Mod4 Up           :ExecCommand ~/.fluxbox/scripts/snap.sh top
+Mod4 Down         :ExecCommand ~/.fluxbox/scripts/snap.sh bottom
+
+! --- Workspaces (estilo sway: Super+numero muda, Super+Shift+numero move janela) ---
+Mod4 1            :Workspace 1
+Mod4 2            :Workspace 2
+Mod4 3            :Workspace 3
+Mod4 4            :Workspace 4
+Mod4 5            :Workspace 5
+
+Mod4 Shift 1      :SendToWorkspace 1
+Mod4 Shift 2      :SendToWorkspace 2
+Mod4 Shift 3      :SendToWorkspace 3
+Mod4 Shift 4      :SendToWorkspace 4
+Mod4 Shift 5      :SendToWorkspace 5
+
+Mod4 Control Right :NextWorkspace
+Mod4 Control Left  :PrevWorkspace
+
+! --- Ajuda / Atalhos ---
+Mod4 F1           :ExecCommand voidbr-shortcuts-fluxbox
+
+! --- Sistema ---
+Mod4 Shift e       :ExecCommand rofi -show power-menu -modi power-menu:~/.fluxbox/scripts/powermenu.sh -theme ~/.config/rofi/tokyonight.rasi
+Mod4 Print        :ExecCommand scrot ~/Pictures/%Y-%m-%d_%H-%M-%S.png
+Mod4 Shift r       :Reconfigure
+Mod4 Shift Escape :ExecCommand xkill
+
+! --- Volume / brilho (opcional, requer pactl / brightnessctl) ---
+None XF86AudioRaiseVolume :ExecCommand pactl set-sink-volume @DEFAULT_SINK@ +5%
+None XF86AudioLowerVolume :ExecCommand pactl set-sink-volume @DEFAULT_SINK@ -5%
+None XF86AudioMute        :ExecCommand pactl set-sink-mute @DEFAULT_SINK@ toggle
+None XF86MonBrightnessUp  :ExecCommand brightnessctl set +5%
+None XF86MonBrightnessDown:ExecCommand brightnessctl set 5%-
