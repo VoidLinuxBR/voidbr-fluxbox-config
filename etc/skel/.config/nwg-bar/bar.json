@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Lock",
+    "exec": "xlock -mode blank",
+    "icon": "system-lock-screen"
+  },
+  {
+    "label": "Logout",
+    "exec": "pkill fluxbox",
+    "icon": "system-log-out"
+  },
+  {
+    "label": "Suspend",
+    "exec": "loginctl suspend",
+    "icon": "system-suspend"
+  },
+  {
+    "label": "Reboot",
+    "exec": "loginctl reboot",
+    "icon": "system-reboot"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "loginctl poweroff",
+    "icon": "system-shutdown"
+  }
+]
