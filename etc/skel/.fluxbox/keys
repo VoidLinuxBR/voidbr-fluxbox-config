@@ -14,7 +14,7 @@ OnDesktop Mouse4  :NextWorkspace
 OnDesktop Mouse5  :PrevWorkspace
 
 ! --- Aplicativos ---
-Mod4 Return       :ExecCommand kitty
+Mod4 Return       :ExecCommand xfce4-terminal
 Mod4 d            :ExecCommand rofi -show drun -theme ~/.config/rofi/tokyonight.rasi
 Mod4 Shift d      :ExecCommand rofi -show run -theme ~/.config/rofi/tokyonight.rasi
 Mod4 e            :ExecCommand thunar

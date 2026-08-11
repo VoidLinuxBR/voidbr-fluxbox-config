@@ -7,3 +7,31 @@
   [Position]  (CENTER) {0 0}
   [Deco]      {NONE}
 [end]
+
+[app] (name=pavucontrol) (class=pavucontrol)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=pavucontrol) (class=pavucontrol)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=xfce4-terminal) (class=Xfce4-terminal)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=Navigator) (class=Firefox)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=nm-connection-editor) (class=Nm-connection-editor)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=gnome-system-monitor) (class=Gnome-system-monitor)
+  [Position]  (CENTER) {0 0}
+[end]
+
+[app] (name=.*) (class!=Polybar) (class!=Nwg-bar)
+  [Position]  (CENTER) {0 0}
+[end]
