@@ -1,5 +1,4 @@
 # ~/.fluxbox/keys
-
 ! ============================================================
 ! Fluxbox keybindings - estilo Sway / Hyprland (Super/Mod4 based)
 ! Copie para ~/.fluxbox/keys
@@ -16,7 +15,7 @@ OnDesktop Mouse5  :PrevWorkspace
 ! --- Aplicativos ---
 Mod4 Return       :ExecCommand xfce4-terminal
 Mod4 d            :ExecCommand rofi -show drun -theme ~/.config/rofi/tokyonight.rasi
-Mod4 Shift d      :ExecCommand rofi -show run -theme ~/.config/rofi/tokyonight.rasi
+Mod4 Shift d       :ExecCommand rofi -show run -theme ~/.config/rofi/tokyonight.rasi
 Mod4 e            :ExecCommand thunar
 Mod4 b            :ExecCommand firefox
 Mod4 l            :ExecCommand betterlockscreen -l
@@ -44,18 +43,16 @@ Mod4 2            :Workspace 2
 Mod4 3            :Workspace 3
 Mod4 4            :Workspace 4
 Mod4 5            :Workspace 5
-
 Mod4 Shift 1      :SendToWorkspace 1
 Mod4 Shift 2      :SendToWorkspace 2
 Mod4 Shift 3      :SendToWorkspace 3
 Mod4 Shift 4      :SendToWorkspace 4
 Mod4 Shift 5      :SendToWorkspace 5
-
 Mod4 Control Right :NextWorkspace
 Mod4 Control Left  :PrevWorkspace
 
 ! --- Ajuda / Atalhos ---
-Mod4 F1           :ExecCommand voidbr-shortcuts-fluxbox
+Mod4 F1           :ExecCommand voidbr-fluxbox-shortcuts
 
 ! --- Sistema ---
 Mod4 Shift e       :ExecCommand rofi -show power-menu -modi power-menu:~/.fluxbox/scripts/powermenu.sh -theme ~/.config/rofi/tokyonight.rasi

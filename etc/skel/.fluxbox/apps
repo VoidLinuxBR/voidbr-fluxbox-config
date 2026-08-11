@@ -12,10 +12,6 @@
   [Position]  (CENTER) {0 0}
 [end]
 
-[app] (name=pavucontrol) (class=pavucontrol)
-  [Position]  (CENTER) {0 0}
-[end]
-
 [app] (name=xfce4-terminal) (class=Xfce4-terminal)
   [Position]  (CENTER) {0 0}
 [end]
